@@ -109,24 +109,19 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
     }
-.header-contact-list{
-    display: flex;
-    margin-left: auto;
-}
 
 
 /*......................................пошта та телефон.............................*/
-.hover:focus,
-.hover:hover,
+
 .header-address:focus,
 .header-address:hover {
     color: var(--accent-color);}
-
+  
 .header-address {
-    display: block;
+    display: flex;
+    align-items: center;
 
     color: var(--secondary-text-color);
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.19;
@@ -136,6 +131,15 @@ body{
         верху то тобі приміниться ця властивість..*/
 .header-contact-list .header-contact + .header-contact{
     margin-left: 50px;
+}
+.header-contact-list{
+    display: flex;
+    margin-left: auto;
+}
+.header-contact-icon{
+    margin-right: 10px;
+    fill: currentColor;
+    
 }
 /* ......................................HERO........................................*/
 .hero{
