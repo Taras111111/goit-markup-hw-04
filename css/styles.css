@@ -16,11 +16,19 @@
     --border-color:#EEEEEE;
 }
 p,h1,h2,h3,h4,h5,h6 { 
-    margin: 0;}
+    margin: 0;
+    outline: 1px solid teal}
+    /* 3333333333333 */
 ul{
     margin: 0;
     padding-left: 0;
+    outline: 1px solid greenyellow
+    /* 3333333333333 */
 }
+div{
+    outline: 1px solid #5d00ff
+}
+
 img{
     display: block;
 }
@@ -36,7 +44,7 @@ body{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 .list{
@@ -157,13 +165,13 @@ body{
 
 .main-hero {
 
+    color: var(--wite-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;    
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--wite-color);
     max-width: 696px;
     margin: 0 auto;
 }
@@ -172,9 +180,11 @@ body{
 .main-button:hover,
 .main-button:focus{
     background-color: var(--batton-hover-color)}
-    /* color: var(--accent-color);} */
+
 
 .main-button {
+    background-color: var(--accent-color);
+    color: var(--wite-color);
     font-family:inherit;
     font-weight: 700;
     font-size: 16px;
@@ -184,8 +194,7 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    background-color: var(--accent-color);
-    color: var(--wite-color);
+
     margin: 0 auto;
     margin-top: 30px;
     padding: 10px 32px;
@@ -213,7 +222,6 @@ body{
     display: block;
 
     margin-bottom: var(--typical-margin);
-  
     text-align: left;
     font-size: 14px;
     line-height: 1.19;
@@ -221,11 +229,23 @@ body{
 }
 
 .quality-subtitle {
+    
+    color: var(--subtitle-color);
     line-height: 1.71;
     display: block;
     text-align: left;
-
-    color: var(--subtitle-color);}
+    }
+.quality-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: var(--background-btn-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+   
+}
 /* -------------------------------------------картинки роботи------------------------------------------ */
 .job-list{
     display: flex;
@@ -361,15 +381,14 @@ body{
 .footer-title{   
   
     color: var(--wite-color);
-  
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-
-
-
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }    
-/* .footer-soc-item {
+
+.footer-soc-item {
     width: 44px;
     height: 44px;
     margin-right: 10px;
@@ -388,7 +407,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #AFB1B8;
+    fill: var(--wite-color);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-soc-list {
@@ -401,7 +421,7 @@ body{
 .footer-soc-linc:focus {
     background-color: var(--accent-color);
     fill: var(--wite-color);
-} */
+}
 
 /* --------------------------------------------- фільтр-------------------------------------------- */
 .portfolio-section{
