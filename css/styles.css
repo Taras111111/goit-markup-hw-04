@@ -17,17 +17,18 @@
 }
 p,h1,h2,h3,h4,h5,h6 { 
     margin: 0;
-    outline: 1px solid teal}
+    /* outline: 1px solid teal */
     /* 3333333333333 */
+}
 ul{
     margin: 0;
     padding-left: 0;
-    outline: 1px solid greenyellow
+    /* outline: 1px solid greenyellow */
     /* 3333333333333 */
 }
-div{
+/* div{
     outline: 1px solid #5d00ff
-}
+} */
 
 img{
     display: block;
@@ -44,7 +45,7 @@ body{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .list{
@@ -335,6 +336,41 @@ body{
     background-color: var(--accent-color);
     fill: var(--wite-color);
 }
+/* .........................REGULAR CUSTOMERS................................ */
+
+.customers{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client-title{
+color: var(--main-text-color);
+font-size: 36px;
+line-height: calc(42/36);
+text-align: center;
+margin-bottom: 50px;
+}
+.client-list{
+    display: flex;
+    justify-content: space-between;
+}
+.client-link{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;;
+}
+
+.client-link:hover,
+.client-link:focus{
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+
 
 /* ---------------------------------------------логотип футера --------------------------------- */
 .footer-logo {
@@ -379,15 +415,17 @@ body{
     }
 
 .footer-title{   
-  
+    display: block;
     color: var(--wite-color);
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    border: 1px solid #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}    
 
+}    
+.footer-soc{
+    display: block;
+    margin-left: 70px;
+}
 .footer-soc-item {
     width: 44px;
     height: 44px;
@@ -448,21 +486,25 @@ body{
     cursor: pointer;
     background-color: var(--background-btn-color);
     padding: 6px 22px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: none;
 }
     
-    .portfolio-btn:hover,
-    .portfolio-btn:focus {
-        background-color: var(--accent-color);
-        color: var(--wite-color);
-    }
-   
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--wite-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+ 
 .portfolio-items{
     display: flex;
     flex-wrap: wrap;
 }
+.portfolio-item:hover,
+.portfolio-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}  
 .portfolio-item{
     width: 370px;
     margin-right: 30px;

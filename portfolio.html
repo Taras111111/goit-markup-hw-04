@@ -28,18 +28,28 @@
         <!-- ..................................НАВІГАЦІЯ..........................................................  -->
         <nav class="header-nav">
           <ul class="header-list list">
-            <li class="header-item"><a href="./index.html" class="header-link link">Студия</a></li>
-            <li class="header-item"><a href="" class="header-link curent link">Портфолио</a></li>
+            <li class="header-item">
+              <a href="./index.html" class="header-link curent link">Студия</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-link link">Портфолио</a>
+            </li>
             <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
           </ul>
         </nav>
         <!-- .............................................ПОШТА Та ТЕЛЕФОН............................................ -->
         <ul class="header-contact-list list">
           <li class="header-contact">
-            <a href="mailto:info@devstudio.com" class="header-address link">info@devstudio.com</a>
+            
+            <a href="mailto:info@devstudio.com" class="header-address link"><svg class="header-contact-icon" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
+          >info@devstudio.com</a>
           </li>
           <li class="header-contact">
-            <a href="tel:+380961111111" class="header-address link">+38 096 111 11 11</a>
+            
+            <a href="tel:+380961111111" class="header-address link"><svg class="header-contact-icon" width="10" height="16">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
+          >+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -199,9 +209,11 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <!-- .......................................ЛОГОТИП ФУТЕРА.................................................... -->
+        <div class="footer-contact">
+
+        <!--....................................ЛОГОТИП ФУТЕРА............................................-->
         <a lang="en" href="" class="footer-logo logo link"><span class="span">Web</span>Studio</a>
-        <!-- .............................................КОНТАКТИ...................................................... -->
+        <!-- .............................................КОНТАКТИ.......................................  -->
         <address class="footer-address">
           <ul class="footer-list list">
             <li class="footer-item">
@@ -213,7 +225,7 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <!-- ...............................................ТЕЛЕФОН ТА ПОШТА........................................... -->
+            <!-- ...............................................ТЕЛЕФОН ТА ПОШТА........................................................... -->
             <li class="footer-item">
               <a href="mailto:info@example.com" class="footer-tel link hover">info@example.com</a>
             </li>
@@ -221,6 +233,37 @@
               <a href="tel:+380991111111" class="footer-tel link hover">+38 099 111 11 11</a>
             </li>
           </ul>
+          </div>
+          <!-- ......................SOCIAL NETWORK............................... -->
+          <div class="footer-soc">
+          <h2 class="footer-title">присоединяйтесь</h2>
+          <ul class="footer-soc-list list">
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-linc link"
+                ><svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-linc link"
+                ><svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-linc link"
+                ><svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-linc link"
+                ><svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+          </div>
         </address>
       </div>
     </footer>
