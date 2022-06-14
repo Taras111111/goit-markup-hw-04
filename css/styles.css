@@ -19,18 +19,18 @@
 }
 p,h1,h2,h3,h4,h5,h6 { 
     margin: 0;
-    outline: 1px solid teal
+    /* outline: 1px solid teal */
     /* 3333333333333 */
 }
 ul{
     margin: 0;
     padding-left: 0;
-    outline: 1px solid greenyellow
+    /* outline: 1px solid greenyellow */
     /* 3333333333333 */
 }
-div{
+/* div{
     outline: 1px solid #5d00ff
-}
+} */
 
 img{
     display: block;
